@@ -42,7 +42,7 @@ nav {
     margin: 0 .5rem;
   }
 }
-a{color: #fff; text-decoration: none;} 
+
 /* banner */
 #banner {
   margin: 5rem 0;
@@ -237,4 +237,7 @@ body{
   line-height: 1.4;
   word-spacing: 100vw;
 }
-
+a{
+color: #fff; 
+text-decoration: none;
+} 
