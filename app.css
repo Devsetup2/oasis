@@ -196,16 +196,7 @@ body{
   background-position: center;
   border-radius: var(--spacing-l);
   bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transform-origin: center;
-  transform:  scale(1) translateZ(0);
-  transition: 
-    filter 200ms linear,
-    transform 200ms linear;
+ 
 }
 
 .card:hover .card__background{
