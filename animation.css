@@ -1,34 +1,9 @@
 .header {
   padding: 60px;
-  background-color: rgba(0,0,0,0.938);
   text-align: center;
   color: white;
   font-size: 30px;
   width: auto;
   height: auto;
  
-  animation:image 15s infinite alternate;
--webkit-animation:image 10s infinite alternate;
--moz- animation:image 10s infinite alternate;  
-}
-@keyframes image {
-0%{
-background-color: rgba(0,0,0,0.938);
-}
-
-25%{
-background-color:rgba(0,0,0,0.938);
-}
-
-50%{
-background-color:rgba(0,0,0,0.938);
-}
-
-75%{
-background-color:rgba(0,0,0,0.938);
-}
-
-100%{
-background-color:rgba(0,0,0,0.938);
-}
-}
+ {
