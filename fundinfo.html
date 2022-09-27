@@ -51,19 +51,10 @@
         font-size: 14px;
         margin: 0 10px;
       }
-   */copy*/
-   .kpylabtn{position:relative;background-color:#4CAF50;border:none;font-size:px;color:#FFF;padding:10px;width:100px;text-align:center;-webkit-transition-duration:.4s;transition-duration:.4s;text-decoration:none;overflow:hidden;cursor:pointer}.kpylabtn:after{content:"";background:#f1f1f1;display:block;position:absolute;padding-top:300%;padding-left:350%;margin-left:-20px!important;margin-top:-120%;opacity:0;transition:all .8s}.kpylabtn:active:after{padding:0;margin:0;opacity:1;transition:0}   
+  label{clear:both;display:block;font-size:.85em;font-weight:700;padding:.8em 0 .2em;user-select:none}input,button{float:left;font-size:1em;padding:3px 6px;margin:0;border:1px solid #333;outline:0;box-shadow:none}::-moz-focus-inner{padding:0;border:0}input{width:15em;background-color:#fff;border-right:0 none;border-radius:3px 0 0 3px}button{position:relative;background-color:#aaa;border-radius:0 3px 3px 0;cursor:pointer}.copied::after{position:absolute;top:12%;right:110%;display:block;content:"copied";font-size:.75em;padding:2px 3px;color:#fff;background-color:#22a;border-radius:3px;opacity:0;will-animate:opacity,transform;animation:showcopied 1.5s ease}@keyframes showcopied{0%{opacity:0;transform:translateX(100%)}70%{opacity:1;transform:translateX(0)}100%{opacity:0}}
     </style>
   <script>
-  function copyText (text) {
-  const element = document.createElement('textarea');
-  element.value = text;
-  document.body.appendChild(element);
-  element.focus();
-  element.setSelectionRange(0, element.value.length);
-  document.execCommand('copy');
-  document.body.removeChild(element);
-}  
+ !function(){"use strict";document.body.addEventListener("click",function(e){var t=e.target,e=t.dataset.copytarget,c=e?document.querySelector(e):null;if(c&&c.select){c.select();try{document.execCommand("copy"),c.blur(),t.classList.add("copied"),setTimeout(function(){t.classList.remove("copied")},1500)}catch(e){alert("please press Ctrl/Cmd+C to copy")}}},!0)}(); 
   </script>  
   </head>
   <body>
@@ -94,17 +85,20 @@ Our goal and goal is to create a mobile-based game server, so we need funds.
       <div class="container">
       <ul>
         
-<li><button class="kpylabtn" onclick='copyText("1GhkDYaWwpvULC1NWwqVqVjPzsUASiRB7R")'>
-  BTC Adress
-</button></li> 
+<li><label for="website"> BTC Adress</label>
+<input type="text" id="website" value="1GhkDYaWwpvULC1NWwqVqVjPzsUASiRB7R" />
+<button data-copytarget="#website">copy</button>
+</li> 
         <br>
-<li><button class="kpylabtn" onclick='copyText("0x1A9FBFFf85986a8F948AF4D5e77465D254488601")'>
-  ETH Adress
-</button></li>
+<li><label for="website"> ETH Adress</label>
+<input type="text" id="website" value="0x1A9FBFFf85986a8F948AF4D5e77465D254488601" /> 
+  <button data-copytarget="#website">copy</button>
+</li>
         <br>
-<li><button class="kpylabtn" onclick='copyText("0x1A9FBFFf85986a8F948AF4D5e77465D254488601")'>
-Matic Adress
-</button></li> 
+<li><label for="website"> Matic Adress</label>
+<input type="text" id="website" value="0x1A9FBFFf85986a8F948AF4D5e77465D254488601" />
+ <button data-copytarget="#website">copy</button>
+  </li>
   </ul>
         </div>
       <div id="suggestions">
