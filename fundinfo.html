@@ -51,8 +51,20 @@
         font-size: 14px;
         margin: 0 10px;
       }
-
+   */copy*/
+   .kpylabtn{position:relative;background-color:#4CAF50;border:none;font-size:px;color:#FFF;padding:10px;width:100px;text-align:center;-webkit-transition-duration:.4s;transition-duration:.4s;text-decoration:none;overflow:hidden;cursor:pointer}.kpylabtn:after{content:"";background:#f1f1f1;display:block;position:absolute;padding-top:300%;padding-left:350%;margin-left:-20px!important;margin-top:-120%;opacity:0;transition:all .8s}.kpylabtn:active:after{padding:0;margin:0;opacity:1;transition:0}   
     </style>
+  <script>
+  function copyText (text) {
+  const element = document.createElement('textarea');
+  element.value = text;
+  document.body.appendChild(element);
+  element.focus();
+  element.setSelectionRange(0, element.value.length);
+  document.execCommand('copy');
+  document.body.removeChild(element);
+}  
+  </script>  
   </head>
   <body>
 
@@ -81,11 +93,18 @@ Our goal and goal is to create a mobile-based game server, so we need funds.
       </div>
       <div class="container">
       <ul>
-<li><a href="">BTC Adress:1GhkDYaWwpvULC1NWwqVqVjPzsUASiRB7R</a></li> 
+        
+<li><button class="kpylabtn" onclick='copyText("1GhkDYaWwpvULC1NWwqVqVjPzsUASiRB7R")'>
+  BTC Adress
+</button></li> 
         <br>
-<li><a href="">ETH Adress:0x1A9FBFFf85986a8F948AF4D5e77465D254488601</a></li>
+<li><button class="kpylabtn" onclick='copyText("0x1A9FBFFf85986a8F948AF4D5e77465D254488601")'>
+  ETH Adress
+</button></li>
         <br>
-<li><a href="">Matic Adress:0x1A9FBFFf85986a8F948AF4D5e77465D254488601</a></li> 
+<li><button class="kpylabtn" onclick='copyText("0x1A9FBFFf85986a8F948AF4D5e77465D254488601")'>
+Matic Adress
+</button></li> 
   </ul>
         </div>
       <div id="suggestions">
