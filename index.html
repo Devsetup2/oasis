@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/808/808439.png" type="image/x-icon" />
     <meta name="google-site-verification" content="jItd5BZhusHgI9NLRTL_VC8ySfTOES_jDoIY887Mqlc" />
@@ -13,108 +14,105 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://devsetup2.github.io/oasis/" />
     <meta property="og:title" content="oasis" />
-   <meta name="publisher" content="VS 2022" />	
+   <meta name="publisher" content="VS 2023" />	
     <title>Oasis</title>
 </head>
 <body>
+  <!--Navbar-->
   
-  <navbar class="navbar" id="navbar">
-<img src="netflix-logo.png" alt="" class="nav_logo">
-<img src="netflix-logo.png.png" alt="" class="nav_avatar">
-  </navbar>
-  <!--header-->
-  <div class="banner">
-   <div class="banner_content">
-    <h2 class="banner_title">Oasis</h2>
-     <button class="banner_button"><a href="">Donation</a></button>   
-     <button class="banner_button"><a href="">Twitter</a></button>  
-    <div class="banner_description">
-      <p style="font-size: 16px;">Oasis offers free games and useful sites.</p>
-    </div>
-   </div> 
-  </div>  
-   <section class="hero-section">
-            <div class="card-grid">
-              <a class="card" href="Orbit.html" title="Orbit">
-                <div class="card__background" style="background-image: url('Orbit.webp')"></div>
-                <div class="card__content">
-                  <h3 class="card__heading">Orbit</h3>
-                </div>
-              </a>
-              <a class="card" href="SlingTomb.html" title="SlingTomb">
-                <div class="card__background" style="background-image: url('SlingTomb.webp')"></div>
-                <div class="card__content">
-                  <h3 class="card__heading">SlingTomb</h3>
-                </div>
-              </a>
-              <a class="card" href="Hyper Squares.html" title="Hyper Squares">
-                <div class="card__background" style="background-image: url('Hyper.webp')"></div>
-                <div class="card__content">
-                  <h3 class="card__heading">Hyper Squares</h3>
-                </div>
-              </li>
-              <a class="card" href="Rolling Ball 3D.html" title="Rolling Ball 3D">
-                <div class="card__background" style="background-image: url('Rolling.webp')"></div>
-                <div class="card__content">
-                  <h3 class="card__heading">Rolling Ball 3D</h3>
-                </div>
-              </a>
-            <div>
-          </section>
-   <!--Trend-->
-   <div class="row">
-    <h2>Trend Now</h2>
-    <div class="row_posters">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
-    </div> 
-  </div> 
+  <nav class="navbar navbar-expand-lg bg-body-tertiary container text-center">
   
-  <!--Top Rated-->
-  <div class="row">
-    <h2>Top Rated</h2>
-    <div class="row_posters">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
-    </div> 
-  </div>  
-  <!--Action Movie-->
-  <div class="row">
-    <h2>Action Movie</h2>
-    <div class="row_posters">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
- <img src="" alt="" class="row_poster">
-    </div> 
-  </div>    
-<script>
- const nav = document.getElementById('nav');
-window.addEventListener('scroll',() =>{
-  if(window.screenY >100){
-    nav.classList('nav_black')
-  } 
-  else{
-  nav.classList.remove('nav_black')
-  }
-})
+  </nav>
 
-</script>
+  
+        <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+          <div class="col-md-6 px-0">
+            <!--navbar-->
+           
+            <h1 class="display-4 font-italic">Oasis Gaming Platform <b>Free</b></h1>
+            <p class="lead my-3"></p>
+            <p class="lead mb-0"><a href="#">Dowland</a></p>
+          </div>
+        </div>
+<!--Navbar sonu-->
+  
+<!---Grid--->
+<div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <!---game--->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+          <a href="Orbit.html"><img src="Orbit.png" class="d-block w-100"></a>
+              </div>
+              <div class="carousel-item">
+            <a href="popblue.html"></a><img src="blue.png" class="d-block w-100"></a>
+              </div>
+              <div class="carousel-item">
+          <a href="SlingTomb.html"><img src="SlingTomb.png" class="d-block w-100"></a>
+              </div>
+            </div>
+          </div>
+       <!---Game--->
+      </div>
+      <div class="col">
+          <!---game--->
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="Rolling Ball 3D.html"><img src="Rolling Ball 3D.png" class="d-block w-100" alt="..."></a>
+              </div>
+              <div class="carousel-item">
+                <a href="Santa Run.html"><img src="santa run.png" class="d-block w-100" alt="..."></a>
+              </div>
+              <div class="carousel-item">
+                <a href="Monsterpackman.html"><img src="Monsterpackman.PNG" class="d-block w-100" alt="..."></a>
+              </div>
+            </div>
+          </div>
+       <!---Game--->
+      </div>
+      <div class="col">
+          <!---game--->
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="wordle.html"><img src="wordle.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <a href="ZigZig.html"><img src="Zing.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <a href="NeonBrick.html"><img src="neonbrick.PNG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+       <!---Game--->
+      </div>
+    </div>
+  </div>
+   
+ 
+
+ <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+<script>
+  const nav = document.getElementById('nav');
+ window.addEventListener('scroll',() =>{
+   if(window.screenY >100){
+     nav.classList('nav_black')
+   } 
+   else{
+   nav.classList.remove('nav_black')
+   }
+ })
+ 
+ </script>
+
 </body>
 </html>
