@@ -1,8 +1,9 @@
 /*Design By Muammer Altunkan*/
+/*Design By Muammer Altunkan*/
 @font-face {
     font-family: 'Lato-Bold'; 
     src: url('./Lato-Bold.ttf'); 
-    }
+}
 body {
     margin: 0;
     height: 100vh;
@@ -11,10 +12,12 @@ body {
     align-items: center;
     background: linear-gradient(145deg, #1c1c1c, #121212);
     font-family: 'lato-bold';
+    flex-direction: column;
 }
 
 .container {
     text-align: center;
+    width: 100%;
 }
 
 .custom-button {
@@ -30,7 +33,6 @@ body {
     cursor: pointer;
     border-radius: 20px;
     box-shadow: 0 4px #999;
-   
 }
 
 .custom-button:hover {
@@ -65,7 +67,6 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(145deg, #1c1c1c, #121212);
     color: #fff;
-    display: flex;
 }
 
 .header {
@@ -105,7 +106,7 @@ body {
     color: white;
     padding: 8px 16px;
     border-radius: 20px;
-    transition: bacground 0.3s;
+    transition: background 0.3s;
 }
 
 .nav-links a:hover {
@@ -144,5 +145,50 @@ body {
 
 .sidebar ul a:hover {
     background-color: #444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-links li {
+        margin-left: 0;
+    }
+    .nav-links a {
+        width: 100%;
+        text-align: left;
+        padding: 12px;
+    }
+    .sidebar {
+        width: 100%;
+        top: 120px;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+    .custom-button {
+        width: 100%;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+    .custom-button {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    .grid-item {
+        padding: 15px;
+    }
 }
 
