@@ -1,66 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Game- Oasis</title>
-     <meta name="description" content="Oasis game platform android app" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oasis Game App</title>
+      <meta name="description" content="Oasis game platform" />
     <meta name="author" content="Muammer Altunkan">
     <meta property="og:site_name" content="oasis" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="oasis game app" />
     <meta property="og:url" content="https://devsetup2.github.io/oasis/" />
     <meta property="og:title" content="oasis" />
-   <meta name="publisher" content="VS 2023" />	
-    <link rel="stylesheet" href="style.css">
+   <meta name="publisher" content="VS 2024" />	
+  <style>
+  /* Genel Ayarlar */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2d2f36;
+}
+
+/* Scroll container */
+.scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Scroll içeriği */
+.scroll-content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Scroll item (neumorphism stili) */
+.scroll-item {
+    background-color: #2d2f36;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.7), -7px -7px 15px rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.scroll-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.scroll-item:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .scroll-item {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .scroll-item {
+        width: 150px;
+        height: 100px;
+    }
+}
+
+  
+  </style>
 </head>
 <body>
-    <div class="header">
-    <div class="navbar">
-       
-        <ul class="nav-links">
-            <div class="logo">Oasis</div>
-            <li><a href="#">Project</a></li>
-            <li><a href="https://medium.com/@setup.dev42">Blog</a></li>
-            <li><a href="https://setupdev.gumroad.com/">Shop</a></li>
-        </ul>
+  <div class="container">
+    <!-- 20 adet scrollable item -->
+    <div class="scroll-container">
+      <!-- Her bir scroll için ayrı resimler -->
+      <div class="scroll-item"><a href="Orbit.html"><img src="Orbit.png" alt="Orbit"></a></div>
+      <div class="scroll-item"><a href="SlingTomb.html"></a><img src="SlingTomb.png" alt="SlingTomb"></a></div>
+      <div class="scroll-item"><a href="ZigZig.html"></a><img src="ZigZig.png" alt="ZigZig"></a></div>
+      <div class="scroll-item"><a href="candydash.html"></a><img src="candyDash.png" alt="candydash"></a></div>
+      <div class="scroll-item"><a href="popblue.html"></a><img src="popblue.png" alt="popblue"></a></div>
+      <div class="scroll-item"><a href="Monsterpackman.html"></a><img src="Monsterpackman.png" alt="Monsterpackman"></a></div>
     </div>
-    <div class="sidebar">
-        <ul>
-            <li><a href="https://www.instagram.com/setup.dev42/">İnstagram</a></li>
-            <li><a href="https://devsetup2.github.io/MuammerAltunkan/">Github</a></li>
-            <li><a href="https://www.youtube.com/channel/UCZliMgPdHOGsprprZIiAIeA">Youtube</a></li>
-            <li><a href="#">?</a></li>
-        </ul>
-    </div>
-    </div>
-    <div class="container">
-       
-        <div class="grid-container">
-            <a href="Desert Road.html"><div class="grid-item custom-button">1</div></a>
-            <a href="Orbit.html"><div class="grid-item custom-button">2</div></a>
-            <a href="Santa Run and Jump.html"><div class="grid-item custom-button">3</div></a>
-            <a href="SlingTomb.html"><div class="grid-item custom-button">4</div></a>
-            <a href="ZigZig.html"><div class="grid-item custom-button">5</div></a>
-            <a href="melodys-adventure.html"><div class="grid-item custom-button">6</div></a>
-            <a href="candydash.html"><div class="grid-item custom-button">7</div></a>
-            <a href="Stacking Colors.html"><div class="grid-item custom-button">8</div></a>
-            <a href="Space Pest Annihilation.html"><div class="grid-item custom-button">9</div></a>
-            <a href="SlingTomb.html"><div class="grid-item custom-button">10</div></a>
-            <a href="Rolling Ball 3D.html"><div class="grid-item custom-button">11</div></a>
-            <a href="NeonBrick.html"><div class="grid-item custom-button">12</div></a>
-        </div>
-    </div>
-    <script src="main.js"></script>
+  </div>
+
+  <script>
+
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
 
 
 
